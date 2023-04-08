@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "bootstrap/dist/js/bootstrap.bundle";
+import About_us from './Components/About_us';
+import OnlineAppointment from './Components/OnlineAppointment';
+import Working from './Components/Working';
+import Testimonials from './Components/Testimonials';
+import Affiliate from './Components/Affiliate';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <About_us />
+      <OnlineAppointment />
+      <Working />
+      <Testimonials />
+      <Affiliate />
+      <Footer />
+      
     </div>
   );
 }
